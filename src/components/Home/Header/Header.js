@@ -2,9 +2,9 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <div>
-            
-        </div>
+        <section>
+            <h1>This is header</h1>
+        </section>
     );
 };
 
