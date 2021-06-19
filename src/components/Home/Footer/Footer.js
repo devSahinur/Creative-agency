@@ -1,5 +1,8 @@
 import React from 'react';
 import logo from '../../../images/logo.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMapMarkedAlt, faEnvelope, faMobileAlt } from '@fortawesome/free-solid-svg-icons'
+import { faFacebookF, faTwitter, faInstagram, faLinkedinIn, faSkype } from '@fortawesome/free-brands-svg-icons'
 
 const Footer = () => {
     return (
@@ -62,12 +65,12 @@ const Footer = () => {
                     <h4>Our Social Networks</h4>
                     <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
                     <div className="social-links mt-3">
-                    <a href="#" className="twitter"><i className="bx bxl-twitter"></i></a>
-                    <a href="#" className="facebook"><i className="bx bxl-facebook"></i></a>
-                    <a href="#" className="instagram"><i className="bx bxl-instagram"></i></a>
-                    <a href="#" className="google-plus"><i className="bx bxl-skype"></i></a>
-                    <a href="#" className="linkedin"><i className="bx bxl-linkedin"></i></a>
-                    </div>
+                    <a href="#" className="twitter"><FontAwesomeIcon icon={faTwitter} /></a>
+                    <a href="#" className="facebook"><FontAwesomeIcon icon={faFacebookF} /></a>
+                    <a href="#" className="instagram"><FontAwesomeIcon icon={faInstagram} /></a>
+                    <a href="#" className="google-plus"><FontAwesomeIcon icon={faSkype} /></a>
+                    <a href="#" className="linkedin"><FontAwesomeIcon icon={faLinkedinIn} /></a>
+                    </div> 
                 </div>
 
                 </div>

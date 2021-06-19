@@ -16,7 +16,7 @@ const NavBar = () => {
                 <li><a className="nav-link scrollto active" href="#hero">Home</a></li>
                 <li><a className="nav-link scrollto" href="#about">About Us</a></li>
                 <li><a className="nav-link scrollto" href="#services">Services</a></li>
-                <li><a className="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+                <li><a className="nav-link scrollto" href="#reviews">Reviews</a></li>
                 <li><a className="nav-link scrollto" href="#team">Team</a></li>
                 <li><a className="nav-link scrollto" href="#contact">Contact</a></li>
                 <li><a className="getstarted scrollto" href="#about">Login</a></li>

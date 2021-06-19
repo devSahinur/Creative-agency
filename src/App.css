@@ -16,14 +16,14 @@
     transition: all 0.4s;
   }
   
-  .back-to-top i {
+  .back-to-top svg {
     font-size: 24px;
     color: #fff;
     line-height: 0;
   }
   
   .back-to-top:hover {
-    background: #ee7843;
+    background: #7c7cfc;
     color: #fff;
   }
   
@@ -129,7 +129,7 @@
   
   .navbar .getstarted:hover {
     color: #fff;
-    background: #ee7843;
+    background: #7c7cfc;
   }
   
   .navbar .dropdown ul {
@@ -512,7 +512,7 @@
   .about i {
     font-size: 48px;
     margin-top: 15px;
-    color: #f39e7a;
+    color: #7c7cfc;
   }
   
   .about p {
@@ -550,15 +550,9 @@
   
   .services .icon-box:hover {
     transform: translateY(-5px);
-    border-color: #ef7f4d;
+    border-color: #7c7cfc;
   }
-  
-  .services .icon i {
-    font-size: 48px;
-    line-height: 1;
-    margin-bottom: 15px;
-    color: #ef7f4d;
-  }
+
   
   .services .title {
     font-weight: 700;
@@ -973,13 +967,13 @@
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
   }
   
-  .contact .info i {
+  .contact .info svg {
     font-size: 20px;
     color: #6D6CF6;
     float: left;
     width: 44px;
     height: 44px;
-    background: #fdf1ec;
+    background: #ddddfe9c;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1031,7 +1025,7 @@
   }
   
   .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-    background: #6D6CF6;
+    background: #4b4bbf;
     color: #fff;
   }
   
@@ -1195,7 +1189,7 @@
   }
   
   #footer .footer-newsletter form input[type="submit"]:hover {
-    background: #c54811;
+    background: #7c7cfc;
   }
   
   #footer .footer-top {
@@ -1243,7 +1237,7 @@
   
   #footer .footer-top .footer-links ul i {
     padding-right: 2px;
-    color: #f39e7a;
+    color: #7c7cfc;
     font-size: 18px;
     line-height: 1;
   }
@@ -1286,7 +1280,7 @@
   }
   
   #footer .footer-top .social-links a:hover {
-    background: #ef7f4d;
+    background: #7c7cfc;
     color: #fff;
     text-decoration: none;
   }
