@@ -1,32 +1,4 @@
-/**
-* Template Name: Ninestars - v4.3.0
-* Template URL: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
-body {
-    font-family: "Open Sans", sans-serif;
-    color: #212529;
-  }
-  
-  a {
-    color: #eb5d1e;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #ef7f4d;
-    text-decoration: none;
-  }
-  
-  h1, h2, h3, h4, h5, h6, .font-primary {
-    font-family: "Raleway", sans-serif;
-  }
-  
   /*--------------------------------------------------------------
   # Back to top button
   --------------------------------------------------------------*/
@@ -130,7 +102,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0 10px 30px;
+    /* padding: 10px 0 10px 30px; */
     font-size: 15px;
     color: #4e4039;
     white-space: nowrap;
@@ -330,7 +302,7 @@ body {
     height: 70vh;
     background: #fef8f5;
     border-bottom: 2px solid #fcebe3;
-    margin: 72px 0 -72px 0;
+    /* margin: 72px 0 -72px 0; */
   }
   
   #hero h1 {
