@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../../../images/logo.png'
 
 const Footer = () => {
     return (
@@ -11,7 +12,7 @@ const Footer = () => {
                     <h4>Join Our Newsletter</h4>
                     <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
                     <form action="" method="post">
-                        <input type="email" name="email"/><input type="submit" value="Subscribe" />
+                        <input type="email" placeholder='Enter Your Email' name="email"/><input type="submit" value="Subscribe" />
                     </form>
                 </div>
                 </div>
@@ -23,12 +24,14 @@ const Footer = () => {
                 <div className="row">
 
                 <div className="col-lg-3 col-md-6 footer-contact">
-                    <h3>Ninestars</h3>
-                    <p>
+                    <img style={{width: "150px"}} src={logo} alt="" className="img-fluid"/>
+                    <br />
+                    <br/>
+                    <p className='pb-2'>
                     A108 Adam Street <br/>
                     New York, NY 535022<br/>
-                    United States <br/><br/>
-                    <strong>Phone:</strong> +1 5589 55488 55<br/>
+                    United States <br/>
+                    <strong>Phone:</strong> +8801788215840<br/>
                     <strong>Email:</strong> info@example.com<br/>
                     </p>
                 </div>
@@ -73,10 +76,10 @@ const Footer = () => {
 
             <div className="container py-4">
             <div className="copyright">
-                &copy; Copyright <strong><span>Ninestars</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>Cogency</span></strong>. All Rights Reserved
             </div>
             <div className="credits">
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                Designed by <a href="https://github.com/devSahinur">Sahinur Islam</a>
             </div>
             </div>
         </footer>

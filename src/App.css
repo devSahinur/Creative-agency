@@ -9,7 +9,7 @@
     right: 15px;
     bottom: 15px;
     z-index: 99999;
-    background: #eb5d1e;
+    background: #6D6CF6;
     width: 40px;
     height: 40px;
     border-radius: 4px;
@@ -162,7 +162,7 @@
   }
   
   .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-    color: #eb5d1e;
+    color: #6D6CF6;
   }
   
   .navbar .dropdown:hover > ul {
@@ -255,7 +255,7 @@
   }
   
   .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-    color: #eb5d1e;
+    color: #6D6CF6;
   }
   
   .navbar-mobile .getstarted {
@@ -287,7 +287,7 @@
   }
   
   .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-    color: #eb5d1e;
+    color: #6D6CF6;
   }
   
   .navbar-mobile .dropdown > .dropdown-active {
@@ -442,7 +442,7 @@
     display: block;
     width: 60px;
     height: 2px;
-    background: #eb5d1e;
+    background: #6D6CF6;
     bottom: 0;
     left: calc(50% - 30px);
   }
@@ -604,7 +604,7 @@
   }
   
   .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-    color: #eb5d1e;
+    color: #6D6CF6;
   }
   
   .portfolio #portfolio-flters li:last-child {
@@ -649,7 +649,7 @@
   }
   
   .portfolio .portfolio-wrap .portfolio-links a {
-    color: #eb5d1e;
+    color: #6D6CF6;
     margin: 0 4px;
     line-height: 0;
     background-color: #fff;
@@ -669,7 +669,7 @@
   }
   
   .portfolio .portfolio-wrap .portfolio-links a:hover {
-    background: #eb5d1e;
+    background: #6D6CF6;
     color: #fff;
   }
   
@@ -731,11 +731,11 @@
     height: 12px;
     background-color: #fff;
     opacity: 1;
-    border: 1px solid #eb5d1e;
+    border: 1px solid #6D6CF6;
   }
   
   .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #eb5d1e;
+    background-color: #6D6CF6;
   }
   
   .portfolio-details .portfolio-info {
@@ -796,7 +796,7 @@
   .faq .faq-list .question {
     display: block;
     position: relative;
-    font-family: #eb5d1e;
+    font-family: #6D6CF6;
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
@@ -828,7 +828,7 @@
   }
   
   .faq .faq-list .collapsed:hover {
-    color: #eb5d1e;
+    color: #6D6CF6;
   }
   
   .faq .faq-list .collapsed .icon-show {
@@ -908,7 +908,7 @@
   }
   
   .team .member .social a:hover {
-    color: #eb5d1e;
+    color: #6D6CF6;
   }
   
   .team .member .social i {
@@ -954,19 +954,19 @@
     height: 12px;
     background-color: #fff;
     opacity: 1;
-    border: 1px solid #eb5d1e;
+    border: 1px solid #6D6CF6;
   }
   
   .clients .clients-slider .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #eb5d1e;
+    background-color: #6D6CF6;
   }
   
   /*--------------------------------------------------------------
   # Contact Us
   --------------------------------------------------------------*/
   .contact .info {
-    border-top: 3px solid #eb5d1e;
-    border-bottom: 3px solid #eb5d1e;
+    border-top: 3px solid #6D6CF6;
+    border-bottom: 3px solid #6D6CF6;
     padding: 30px;
     background: #fff;
     width: 100%;
@@ -975,7 +975,7 @@
   
   .contact .info i {
     font-size: 20px;
-    color: #eb5d1e;
+    color: #6D6CF6;
     float: left;
     width: 44px;
     height: 44px;
@@ -1026,19 +1026,19 @@
   }
   
   .contact .info .social-links a:hover {
-    background: #eb5d1e;
+    background: #6D6CF6;
     color: #fff;
   }
   
   .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-    background: #eb5d1e;
+    background: #6D6CF6;
     color: #fff;
   }
   
   .contact .php-email-form {
     width: 100%;
-    border-top: 3px solid #eb5d1e;
-    border-bottom: 3px solid #eb5d1e;
+    border-top: 3px solid #6D6CF6;
+    border-bottom: 3px solid #6D6CF6;
     padding: 30px;
     background: #fff;
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
@@ -1105,7 +1105,7 @@
   }
   
   .contact .php-email-form button[type="submit"] {
-    background: #eb5d1e;
+    background: #6D6CF6;
     border: 0;
     padding: 10px 24px;
     color: #fff;
@@ -1187,7 +1187,7 @@
     background: none;
     font-size: 16px;
     padding: 0 20px;
-    background: #eb5d1e;
+    background: #6D6CF6;
     color: #fff;
     transition: 0.3s;
     border-radius: 4px;
@@ -1267,13 +1267,13 @@
   
   #footer .footer-top .footer-links ul a:hover {
     text-decoration: none;
-    color: #eb5d1e;
+    color: #6D6CF6;
   }
   
   #footer .footer-top .social-links a {
     font-size: 18px;
     display: inline-block;
-    background: #eb5d1e;
+    background: #6D6CF6;
     color: #fff;
     line-height: 1;
     padding: 8px 0;
@@ -1304,7 +1304,7 @@
   }
   
   #footer .credits a {
-    color: #eb5d1e;
+    color: #6D6CF6;
   }
   
   @media (max-width: 575px) {
