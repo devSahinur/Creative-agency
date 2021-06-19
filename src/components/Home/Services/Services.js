@@ -1,5 +1,4 @@
 import React from 'react';
-import img from '../../../images/download.png';
 import ServiceDetail from '../ServiceDetail/ServiceDetail';
 
 // https://i.ibb.co/12bRzsy/service-icon6.png

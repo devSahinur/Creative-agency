@@ -116,11 +116,11 @@
   }
   
   .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-    color: #eb5d1e;
+    color: #6D6CF6;
   }
   
   .navbar .getstarted {
-    background: #eb5d1e;
+    background: #6D6CF6;
     color: #fff;
     padding: 10px 25px;
     margin-left: 30px;
@@ -330,11 +330,11 @@
     transition: 0.5s;
     margin-top: 30px;
     color: #fff;
-    background: #eb5d1e;
+    background: #6D6CF6;
   }
   
   #hero .btn-get-started:hover {
-    background: #ef7f4d;
+    background: #7c7cfc;
   }
   
   #hero .animated {

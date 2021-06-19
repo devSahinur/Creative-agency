@@ -1,7 +1,7 @@
 import React from 'react';
 import aboutImg from '../../../images/about-img.svg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFileInvoice, faCubes } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faFileInvoice, faCubes } from '@fortawesome/free-solid-svg-icons'
 
 
 // https://i.ibb.co/zGXTjRk/drawing-tablet.png
