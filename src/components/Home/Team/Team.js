@@ -27,10 +27,10 @@ const Team = () => {
                         <span>Chief Executive Officer</span>
                         </div>
                         <div class="social">
-                        <a href=""><i class="bi bi-twitter"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
+                        <a href=""><FontAwesomeIcon icon={faFacebookF} /></a>
+                        <a href=""><FontAwesomeIcon icon={faTwitter} /></a>
+                        <a href=""><FontAwesomeIcon icon={faInstagram} /></a>
+                        <a href=""><FontAwesomeIcon icon={faLinkedinIn} /></a>
                         </div>
                     </div>
                     </div>
@@ -45,10 +45,10 @@ const Team = () => {
                         <span>Product Manager</span>
                         </div>
                         <div class="social">
-                        <a href=""><i class="bi bi-twitter"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
+                        <a href=""><FontAwesomeIcon icon={faFacebookF} /></a>
+                        <a href=""><FontAwesomeIcon icon={faTwitter} /></a>
+                        <a href=""><FontAwesomeIcon icon={faInstagram} /></a>
+                        <a href=""><FontAwesomeIcon icon={faLinkedinIn} /></a>
                         </div>
                     </div>
                     </div>
@@ -63,10 +63,10 @@ const Team = () => {
                         <span>CTO</span>
                         </div>
                         <div class="social">
-                        <a href=""><i class="bi bi-twitter"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
+                        <a href=""><FontAwesomeIcon icon={faFacebookF} /></a>
+                        <a href=""><FontAwesomeIcon icon={faTwitter} /></a>
+                        <a href=""><FontAwesomeIcon icon={faInstagram} /></a>
+                        <a href=""><FontAwesomeIcon icon={faLinkedinIn} /></a>
                         </div>
                     </div>
                     </div>
@@ -81,10 +81,10 @@ const Team = () => {
                         <span>Accountant</span>
                         </div>
                         <div class="social">
-                        <a href=""><i class="bi bi-twitter"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
+                        <a href=""><FontAwesomeIcon icon={faFacebookF} /></a>
+                        <a href=""><FontAwesomeIcon icon={faTwitter} /></a>
+                        <a href=""><FontAwesomeIcon icon={faInstagram} /></a>
+                        <a href=""><FontAwesomeIcon icon={faLinkedinIn} /></a>
                         </div>
                     </div>
                     </div>

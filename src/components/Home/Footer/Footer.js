@@ -1,8 +1,9 @@
 import React from 'react';
 import logo from '../../../images/logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMapMarkedAlt, faEnvelope, faMobileAlt } from '@fortawesome/free-solid-svg-icons'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookF, faTwitter, faInstagram, faLinkedinIn, faSkype } from '@fortawesome/free-brands-svg-icons'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -42,22 +43,22 @@ const Footer = () => {
                 <div className="col-lg-3 col-md-6 footer-links">
                     <h4>Useful Links</h4>
                     <ul>
-                    <li><i className="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                    <li><i className="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                    <li><i className="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                    <li><i className="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                    <li><i className="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                    <li><FontAwesomeIcon icon={faChevronRight} /> <Link to='/'>Home</Link></li>
+                    <li><FontAwesomeIcon icon={faChevronRight} /> <Link to='/'>About us</Link></li>
+                    <li><FontAwesomeIcon icon={faChevronRight} /> <Link to='/'>Services</Link></li>
+                    <li><FontAwesomeIcon icon={faChevronRight} /> <Link to='/'>Terms of service</Link></li>
+                    <li><FontAwesomeIcon icon={faChevronRight} /> <Link to='/'>Privacy policy</Link></li>
                     </ul>
                 </div>
 
                 <div className="col-lg-3 col-md-6 footer-links">
                     <h4>Our Services</h4>
                     <ul>
-                    <li><i className="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                    <li><i className="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                    <li><i className="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                    <li><i className="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                    <li><i className="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                    <li><FontAwesomeIcon icon={faChevronRight} /> <Link to='/'>Web Design</Link></li>
+                    <li><FontAwesomeIcon icon={faChevronRight} /> <Link to='/'>Web Development</Link></li>
+                    <li><FontAwesomeIcon icon={faChevronRight} /> <Link to='/'>Product Management</Link></li>
+                    <li><FontAwesomeIcon icon={faChevronRight} /> <Link to='/'>Marketing</Link></li>
+                    <li><FontAwesomeIcon icon={faChevronRight} /> <Link to='/'>Graphic Design</Link></li>
                     </ul>
                 </div>
 
@@ -65,11 +66,11 @@ const Footer = () => {
                     <h4>Our Social Networks</h4>
                     <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
                     <div className="social-links mt-3">
-                    <a href="#" className="twitter"><FontAwesomeIcon icon={faTwitter} /></a>
-                    <a href="#" className="facebook"><FontAwesomeIcon icon={faFacebookF} /></a>
-                    <a href="#" className="instagram"><FontAwesomeIcon icon={faInstagram} /></a>
-                    <a href="#" className="google-plus"><FontAwesomeIcon icon={faSkype} /></a>
-                    <a href="#" className="linkedin"><FontAwesomeIcon icon={faLinkedinIn} /></a>
+                    <Link to='/' className="twitter"><FontAwesomeIcon icon={faTwitter} /></Link>
+                    <Link to='/' className="facebook"><FontAwesomeIcon icon={faFacebookF} /></Link>
+                    <Link to='/' className="instagram"><FontAwesomeIcon icon={faInstagram} /></Link>
+                    <Link to='/' className="google-plus"><FontAwesomeIcon icon={faSkype} /></Link>
+                    <Link to='/' className="linkedin"><FontAwesomeIcon icon={faLinkedinIn} /></Link>
                     </div> 
                 </div>
 
@@ -82,7 +83,7 @@ const Footer = () => {
                 &copy; Copyright <strong><span>Cogency</span></strong>. All Rights Reserved
             </div>
             <div className="credits">
-                Designed by <a href="https://github.com/devSahinur">Sahinur Islam</a>
+                Designed by <Link to="https://github.com/devSahinur" >Sahinur Islam</Link>
             </div>
             </div>
         </footer>
