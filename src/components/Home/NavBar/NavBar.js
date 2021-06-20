@@ -8,6 +8,11 @@ import { useState } from 'react';
 const NavBar = () => {
   const [navToggle, setNavToggle] = useState(!true)
   const toggleChecked = () => setNavToggle(value => !value);
+  
+  const handleScroll =(e) => {
+    return toggleChecked()
+  }
+
     return (
         <header id="header" className="fixed-top d-flex align-items-center">
           <div className="container d-flex align-items-center justify-content-between">
@@ -18,10 +23,10 @@ const NavBar = () => {
             </div>
             {/* "navbar" */}
             <nav id="navbar" className={`${ navToggle ?  'navbarMobile' : 'navbar'}`}>
-              <ul>
+              <ul onClick={() => handleScroll()}>
                 <li><a className="nav-link scrollto active" href="#hero">Home</a></li>
                 <li><a className="nav-link scrollto" href="#about">About Us</a></li>
-                <li><a className="nav-link scrollto" href="#services">Services</a></li>
+                <li ><a  className="nav-link scrollto" href="#services">Services</a></li>
                 
                 <li><a className="nav-link scrollto" href="#reviews">Reviews</a></li>
                 <li><a className="nav-link scrollto" href="#team">Team</a></li>
