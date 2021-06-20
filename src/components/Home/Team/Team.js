@@ -11,14 +11,14 @@ const Team = () => {
         <section id="team" class="team">
             <div class="container">
 
-                <div class="section-title" data-aos="fade-up">
+                <div class="section-title" >
                 <h2>Team</h2>
                 <p>Our team is always here to help</p>
                 </div>
 
                 <div class="row">
 
-                <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                <div class="col-xl-3 col-lg-4 col-md-6" >
                     <div class="member">
                     <img src={team1} class="img-fluid" alt=""/>
                     <div class="member-info">
@@ -36,7 +36,7 @@ const Team = () => {
                     </div>
                 </div>
 
-                <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                <div class="col-xl-3 col-lg-4 col-md-6"  >
                     <div class="member">
                     <img src={team2} class="img-fluid" alt=""/>
                     <div class="member-info">
@@ -54,7 +54,7 @@ const Team = () => {
                     </div>
                 </div>
 
-                <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="member">
                     <img src={team3} class="img-fluid" alt=""/>
                     <div class="member-info">
@@ -72,7 +72,7 @@ const Team = () => {
                     </div>
                 </div>
 
-                <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                <div class="col-xl-3 col-lg-4 col-md-6" >
                     <div class="member">
                     <img src={team4} class="img-fluid" alt=""/>
                     <div class="member-info">

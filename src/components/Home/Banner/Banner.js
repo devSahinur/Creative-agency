@@ -15,7 +15,7 @@ const Banner = () => {
                 </div>
                 </div>
                 <div className="col-lg-6 order-1 order-lg-2 hero-img">
-                    <img src={heroImg} className="img-fluid animated" alt=""/>
+                    <img src={heroImg} className="img-fluid" alt=""/>
                 </div>
             </div>
             </div>

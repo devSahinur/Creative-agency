@@ -1,10 +1,10 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyAgP-QCB8Vr7T9JLf9p9nYL_pvTxcLLslU",
-  authDomain: "my-gerez.firebaseapp.com",
-  projectId: "my-gerez",
-  storageBucket: "my-gerez.appspot.com",
-  messagingSenderId: "673724736476",
-  appId: "1:673724736476:web:bfd2a805c604e463ee2519"
+  apiKey: "AIzaSyB-OuMgY4z6YZbjfg1t2UZL8QIyD5PU12Y",
+  authDomain: "cogency-bd.firebaseapp.com",
+  projectId: "cogency-bd",
+  storageBucket: "cogency-bd.appspot.com",
+  messagingSenderId: "826168062415",
+  appId: "1:826168062415:web:672fb4759046d5b9c6a2ba"
 };
 
 export default firebaseConfig;

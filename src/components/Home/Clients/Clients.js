@@ -55,14 +55,14 @@ const Clients = () => {
 
     return (
         <section id="clients" class="clients section-bg">
-        <div class="container" data-aos="fade-up">
+        <div class="container">
 
             <div class="section-title">
             <h2>Clients</h2>
             <p>They trusted us</p>
             </div>
 
-            <div class="clients-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+            <div class="clients-slider swiper-container"  >
             <div class="swiper-wrapper align-items-center">
             <Swiper
                     loop={true}
@@ -86,8 +86,8 @@ const Clients = () => {
                         },
                     }}
                     autoplay={{
-                        delay: 2500,
-                        disableOnInteraction: false,
+                        delay: 500,
+                        // disableOnInteraction: false,
                     }}
                     spaceBetween={10}
                 >

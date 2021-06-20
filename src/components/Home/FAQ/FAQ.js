@@ -42,7 +42,7 @@ const FAQ = () => {
 
     return (
         <section id="faq" className="faq section-bg">
-            <div className="container" data-aos="fade-up">
+            <div className="container" >
 
                 <div className="section-title">
                     <h2>F.A.Q</h2>

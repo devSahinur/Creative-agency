@@ -5,7 +5,7 @@ import { faMapMarkedAlt, faEnvelope, faMobileAlt } from '@fortawesome/free-solid
 const Contract = () => {
     return (
         <section id="contact" className="contact">
-            <div className="container" data-aos="fade-up">
+            <div className="container" >
 
                 <div className="section-title">
                 <h2>Contact Us</h2>
@@ -13,7 +13,7 @@ const Contract = () => {
                 </div>
 
                 <div className="row">
-                <div className="col-lg-5 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                <div className="col-lg-5 d-flex align-items-stretch">
                     <div className="info">
                     <div className="address">
                     <FontAwesomeIcon icon={faMapMarkedAlt} />
@@ -37,7 +37,7 @@ const Contract = () => {
 
                 </div>
 
-                <div className="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                <div className="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" >
                     <form method="post" className="php-email-form">
                     <div className="row">
                         <div className="form-group col-md-6">
