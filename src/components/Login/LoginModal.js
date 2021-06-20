@@ -15,7 +15,7 @@ import {
 } from './LoginManager';
 import './LoginModal.css';
 
-const Login = () => {
+const LoginModal = () => {
     // const { setLoggedInUser } = useContext(UserContext);
     const [showModl, setLoggedInUser] = useState('');
     const [showModal, setShowModal] = useState(false);
@@ -172,4 +172,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default LoginModal;

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../../images/logo.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 const NavBar = () => {
     return (
@@ -21,10 +23,10 @@ const NavBar = () => {
                 <li><a className="nav-link scrollto" href="#reviews">Reviews</a></li>
                 <li><a className="nav-link scrollto" href="#team">Team</a></li>
                 <li><a className="nav-link scrollto" href="#contact">Contact</a></li>
-                <li><a className="nav-link scrollto" href="#services">Dashboard</a></li>
+                <li><Link className="nav-link scrollto" to='/dashboard/profile'>Dashboard</Link></li>
                 <li><Link className="getstarted scrollto" to='/login'>Login</Link></li>
               </ul>
-              <i className="bi bi-list mobile-nav-toggle"></i>
+              <i className="bi bi-list mobile-nav-toggle"><FontAwesomeIcon icon={faBars} /></i>
             </nav>
 
           </div>
