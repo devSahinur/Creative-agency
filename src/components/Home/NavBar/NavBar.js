@@ -6,7 +6,9 @@ import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react';
 
 const NavBar = () => {
-  const [navToggle, setNavToggle] = useState(!true)
+  const [navToggle, setNavToggle] = useState(false)
+
+
   const toggleChecked = () => setNavToggle(value => !value);
   
   const handleScroll =(e) => {
@@ -23,9 +25,9 @@ const NavBar = () => {
             </div>
             {/* "navbar" */}
             <nav id="navbar" className={`${ navToggle ?  'navbarMobile' : 'navbar'}`}>
-              <ul onClick={() => handleScroll()}>
+              <ul >
                 <li><a className="nav-link scrollto active" href="#hero">Home</a></li>
-                <li><a className="nav-link scrollto" href="#about">About Us</a></li>
+                <li ><a className="nav-link scrollto" href="#about">About Us</a></li>
                 <li ><a  className="nav-link scrollto" href="#services">Services</a></li>
                 
                 <li><a className="nav-link scrollto" href="#reviews">Reviews</a></li>
@@ -34,7 +36,7 @@ const NavBar = () => {
                 <li><Link className="nav-link scrollto" to='/dashboard/profile'>Dashboard</Link></li>
                 <li><Link className="getstarted scrollto" to='/login'>Login</Link></li>
               </ul>
-              <i className="bi bi-list mobile-nav-toggle">{navToggle ? <FontAwesomeIcon onClick={() => toggleChecked()} icon={faTimes} />  : <FontAwesomeIcon onClick={() => toggleChecked()} icon={faBars} /> }</i>
+              <i className="bi bi-list mobile-nav-toggle">{navToggle ? <FontAwesomeIcon  onClick={() => toggleChecked()} icon={faTimes} />  : <FontAwesomeIcon onClick={() => toggleChecked()} icon={faBars} /> }</i>
             </nav>
 
           </div>
