@@ -54,43 +54,60 @@ const Clients = () => {
     // const [loading, setLoading] = useState(true);
 
     return (
-        <Swiper
-        loop={true}
-        slidesPerView={1}
-        breakpoints={{
-            340: {
-                slidesPerView: 3,
-                spaceBetween: 2,
-            },
-            440: {
-                slidesPerView: 4,
-                spaceBetween: 2,
-            },
-            768: {
-                slidesPerView: 6,
-                spaceBetween: 10,
-            },
-            1024: {
-                slidesPerView: 10,
-                spaceBetween: 10,
-            },
-        }}
-        autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-        }}
-        spaceBetween={10}
-    >
-        {
-            clients.map(img => {
-                return (
-                    <SwiperSlide key={img.id}>
-                        <img style={{width: '100px'}} src={img.image} alt="" />
-                    </SwiperSlide>
-                )
-            })
-        }
-    </Swiper>
+        <section id="clients" class="clients section-bg">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+            <h2>Clients</h2>
+            <p>They trusted us</p>
+            </div>
+
+            <div class="clients-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper align-items-center">
+            <Swiper
+                    loop={true}
+                    slidesPerView={1}
+                    breakpoints={{
+                        340: {
+                            slidesPerView: 3,
+                            spaceBetween: 2,
+                        },
+                        440: {
+                            slidesPerView: 4,
+                            spaceBetween: 2,
+                        },
+                        768: {
+                            slidesPerView: 6,
+                            spaceBetween: 10,
+                        },
+                        1024: {
+                            slidesPerView: 8,
+                            spaceBetween: 10,
+                        },
+                    }}
+                    autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    }}
+                    spaceBetween={10}
+                >
+                    {
+                        clients.map(img => {
+                            return (
+                                <SwiperSlide key={img.id}>
+                                    <img style={{width: '100px'}} src={img.image} alt="" />
+                                </SwiperSlide>
+                            )
+                        })
+                    }
+            </Swiper>
+            </div>
+            <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+        </section>
+
     );
 };
 
