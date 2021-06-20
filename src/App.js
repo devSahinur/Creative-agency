@@ -7,6 +7,7 @@ import {
   Switch
 } from "react-router-dom";
 import './App.css'
+import Login from './components/Login/Login';
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Home />
+        </Route>
+        <Route exact path="/login">
+          <Login />
         </Route>
       </Switch>
   </Router>

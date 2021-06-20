@@ -1,5 +1,5 @@
 .testimonials {
-    background: aliceblue;
+    background: #FFFFFF;
     height: 700px;
   }
   
@@ -72,7 +72,7 @@
   }
   
   .testimonials .card {
-    background: #fff;
+    background: aliceblue;
     box-shadow: 0 8px 30px -7px #c9dff0;
     margin: 0 20px;
     min-height: 340px;

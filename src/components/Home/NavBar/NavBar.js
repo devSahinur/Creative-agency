@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../../images/logo.png'
 
 const NavBar = () => {
@@ -16,10 +17,12 @@ const NavBar = () => {
                 <li><a className="nav-link scrollto active" href="#hero">Home</a></li>
                 <li><a className="nav-link scrollto" href="#about">About Us</a></li>
                 <li><a className="nav-link scrollto" href="#services">Services</a></li>
+                
                 <li><a className="nav-link scrollto" href="#reviews">Reviews</a></li>
                 <li><a className="nav-link scrollto" href="#team">Team</a></li>
                 <li><a className="nav-link scrollto" href="#contact">Contact</a></li>
-                <li><a className="getstarted scrollto" href="#about">Login</a></li>
+                <li><a className="nav-link scrollto" href="#services">Dashboard</a></li>
+                <li><Link className="getstarted scrollto" to='/login'>Login</Link></li>
               </ul>
               <i className="bi bi-list mobile-nav-toggle"></i>
             </nav>

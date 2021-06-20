@@ -35,6 +35,7 @@ const FAQ = () => {
         bgColor: '#FEF8F5',
         rowTitleTextSize: '20px',
         titleTextColor: "blue",
+        rowTitleColor: "#6D6CF6",
         rowContentColor: 'grey',
         arrowColor: "#6D6CF6",
     };
