@@ -197,7 +197,7 @@
   * Mobile Navigation 
   */
   .mobile-nav-toggle {
-    color: #7a6960;
+    color: #6D6CF6;
     font-size: 28px;
     cursor: pointer;
     display: none;
@@ -218,7 +218,7 @@
     }
   }
   
-  .navbar-mobile {
+  .navbarMobile {
     position: fixed;
     overflow: hidden;
     top: 0;
@@ -229,13 +229,13 @@
     transition: 0.3s;
   }
   
-  .navbar-mobile .mobile-nav-toggle {
+  .navbarMobile .mobile-nav-toggle {
     position: absolute;
     top: 15px;
     right: 15px;
   }
   
-  .navbar-mobile ul {
+  .navbarMobile ul {
     display: block;
     position: absolute;
     top: 55px;
@@ -248,21 +248,21 @@
     transition: 0.3s;
   }
   
-  .navbar-mobile a {
+  .navbarMobile a {
     padding: 10px 20px;
     font-size: 15px;
     color: #7a6960;
   }
   
-  .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+  .navbarMobile a:hover, .navbarMobile .active, .navbarMobile li:hover > a {
     color: #6D6CF6;
   }
   
-  .navbar-mobile .getstarted {
+  .navbarMobile .getstarted {
     margin: 15px;
   }
   
-  .navbar-mobile .dropdown ul {
+  .navbarMobile .dropdown ul {
     position: static;
     display: none;
     margin: 10px 20px;
@@ -274,23 +274,23 @@
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   }
   
-  .navbar-mobile .dropdown ul li {
+  .navbarMobile .dropdown ul li {
     min-width: 200px;
   }
   
-  .navbar-mobile .dropdown ul a {
+  .navbarMobile .dropdown ul a {
     padding: 10px 20px;
   }
   
-  .navbar-mobile .dropdown ul a i {
+  .navbarMobile .dropdown ul a i {
     font-size: 12px;
   }
   
-  .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
+  .navbarMobile .dropdown ul a:hover, .navbarMobile .dropdown ul .active:hover, .navbarMobile .dropdown ul li:hover > a {
     color: #6D6CF6;
   }
   
-  .navbar-mobile .dropdown > .dropdown-active {
+  .navbarMobile .dropdown > .dropdown-active {
     display: block;
   }
   
