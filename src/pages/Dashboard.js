@@ -5,7 +5,7 @@ import { useHistory, useParams } from 'react-router-dom';
 import { UserContext } from '../App';
 import AddService from '../components/Dashboard/AddService/AddService';
 import Book from '../components/Dashboard/Booking/Booking';
-// import BookingList from '../components/Dashboard/BookingList/BookingList';
+import BookingList from '../components/Dashboard/BookingList/BookingList'
 // import '../components/Dashboard/Dashboard.css';
 import DashboardNavbar from '../components/Dashboard/DashboardNavbar/DashboardNavbar';
 import MakeAdmin from '../components/Dashboard/MakeAdmin/MakeAdmin';
@@ -57,7 +57,7 @@ const Dashboard = ({ adminLoading }) => {
                     : panel === "makeAdmin" && isAdmin ? <MakeAdmin />
                     : panel === "manageServices" && isAdmin ? <ManageService />
                     : panel === "book" ? <Book />
-                    // : panel === "bookingList" ? <BookingList />
+                    : panel === "bookingList" ? <BookingList />
                     // : panel === "review" && loadingReview ? <ReviewLoader />
                     // : panel === "review" && review.name && !reviewEdit ? <Review review={review} setEdit={setReviewEdit} />
                     // : panel === "review" && reviewEdit ? <EditReview review={review} edit={reviewEdit} setEdit={setReviewEdit} />

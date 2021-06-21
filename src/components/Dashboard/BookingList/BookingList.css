@@ -1,0 +1,30 @@
+.table-style {
+    text-align: center;
+    border-radius: 15px;
+    color: gray;
+  }
+  
+  .pending {
+    color: #ff4545;
+    background: #ffe3e3;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .done {
+    color: #009444;
+    background: #c6ffe0;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .on.going {
+    color: #ffc107;
+    background: #ffbb3e4b;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
