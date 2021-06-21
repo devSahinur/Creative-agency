@@ -14,31 +14,36 @@ const Reviews =[
         name: 'Sahinur islam',
         address: 'California',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis mollitia, illo!',
-        img: 'https://i.ibb.co/HDnC8XH/winson.png'
+        img: 'https://i.ibb.co/HDnC8XH/winson.png',
+        star: '5'
     },
     {
         name: 'Jubayer Ahmed',
         address: 'Sirajganj',
         description: "Wow! It's an amazing app.",
-        img: 'https://lh3.googleusercontent.com/a-/AOh14GjlHvI6wjVIVsPRrDANi6N4PhZpGSBeyPeoS1yH=s96-c'
+        img: 'https://lh3.googleusercontent.com/a-/AOh14GjlHvI6wjVIVsPRrDANi6N4PhZpGSBeyPeoS1yH=s96-c',
+        star: '5'
     },
     {
         name: 'Sahinur islam',
         address: 'Chittagong',
         description: 'Your Website services is very good!',
-        img: 'https://lh3.googleusercontent.com/a-/AOh14Gj-juRiP-waDfpkEwNJkM2DW7DwFY3I5cKNdMHp=s96-c'
+        img: 'https://lh3.googleusercontent.com/a-/AOh14Gj-juRiP-waDfpkEwNJkM2DW7DwFY3I5cKNdMHp=s96-c',
+        star: '5'
     },
     {
         name: 'Jamil Ahamed',
         address: 'Gazipur, Bangladesh',
         description: 'Very Nice Work Sohel Islam Imran Brother Keep it up',
-        img: 'https://lh3.googleusercontent.com/a-/AOh14GiXD5j9zapXxq3GC4Yl1zksWcezuekUn3sdQy_wGA=s96-c'
+        img: 'https://lh3.googleusercontent.com/a-/AOh14GiXD5j9zapXxq3GC4Yl1zksWcezuekUn3sdQy_wGA=s96-c',
+        star: '5'
     },
     {
         name: 'Mojmul Haque Mojnu',
         address: 'Dhaka',
         description: 'Onek sundor hoice vai.',
-        img: 'https://lh3.googleusercontent.com/a-/AOh14Gi-qNeZ0suaTd3E-FjAWRmZ2HMmKA24E1QVkpkPVg=s96-c'
+        img: 'https://lh3.googleusercontent.com/a-/AOh14Gi-qNeZ0suaTd3E-FjAWRmZ2HMmKA24E1QVkpkPVg=s96-c',
+        star: '5'
     }
 ]
 

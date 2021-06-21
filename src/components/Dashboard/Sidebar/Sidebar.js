@@ -61,6 +61,21 @@ const Sidebar = ({ show, adminLoading }) => {
                                     <FontAwesomeIcon icon={faCog} /> <span>Manage Services</span>
                                 </Link>
                             </li>
+                            <li>
+                                <Link to="/dashboard/book" className={panel === "book" ? "link-active" : ""}>
+                                    <FontAwesomeIcon icon={faShoppingCart} /> <span>Book</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/dashboard/bookingList" className={panel === "bookingList" ? "link-active" : ""}>
+                                    <FontAwesomeIcon icon={faBook} /> <span>Booking List</span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/dashboard/review" className={panel === "review" ? "link-active" : ""}>
+                                    <FontAwesomeIcon icon={faCommentDots} /> <span>Review</span>
+                                </Link>
+                            </li>
                         </>
                         : <>
                             <li>
