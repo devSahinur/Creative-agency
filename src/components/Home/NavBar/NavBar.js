@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../../images/logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react';
+import ProfilePopper from '../ProfilePopper/ProfilePopper';
+import { UserContext } from '../../../App';
 
 const NavBar = () => {
+  const { loggedInUser: { isSignedIn } } = useContext(UserContext);
   const [navToggle, setNavToggle] = useState(false)
 
 
@@ -31,7 +34,7 @@ const NavBar = () => {
                 <li><a className="nav-link scrollto" href="#team">Team</a></li>
                 <li><a className="nav-link scrollto" href="#contact">Contact</a></li>
                 <li><Link className="nav-link scrollto" to='/dashboard/profile'>Dashboard</Link></li>
-                <li><Link className="getstarted scrollto" to='/login'>Login</Link></li>
+                <li>{isSignedIn ? <ProfilePopper/> : <Link className="getstarted scrollto" to='/login'>Login</Link>}</li>
               </ul>
               <i className="bi bi-list mobile-nav-toggle">{navToggle ? <FontAwesomeIcon  onClick={() => toggleChecked()} icon={faTimes} />  : <FontAwesomeIcon onClick={() => toggleChecked()} icon={faBars} /> }</i>
             </nav>
