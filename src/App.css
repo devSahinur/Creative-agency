@@ -535,6 +535,9 @@
   /*--------------------------------------------------------------
   # Services
   --------------------------------------------------------------*/
+  .service-single{
+    cursor: pointer;
+  }
   .services .icon-box {
     padding: 30px;
     position: relative;
