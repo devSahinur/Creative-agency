@@ -10,8 +10,8 @@ import AddService from '../components/Dashboard/AddService/AddService';
 import DashboardNavbar from '../components/Dashboard/DashboardNavbar/DashboardNavbar';
 // import MakeAdmin from '../components/Dashboard/MakeAdmin/MakeAdmin';
 // import ManageService from '../components/Dashboard/ManageService/ManageService';
-// import OrderList from '../components/Dashboard/OrderList/OrderList';
-// import Profile from '../components/Dashboard/Profile/Profile';
+import OrderList from '../components/Dashboard/OrderList/OrderList';
+import Profile from '../components/Dashboard/Profile/Profile';
 // import AddReview from '../components/Dashboard/Review/AddReview';
 // import Review, { EditReview } from '../components/Dashboard/Review/Review';
 // import ReviewLoader from '../components/Dashboard/Review/ReviewLoader';
@@ -51,9 +51,9 @@ const Dashboard = ({ adminLoading }) => {
             <div id="content">
                 <DashboardNavbar setShowSidebar={setShowSidebar} show={showSidebar} />
                 {
-                    // panel === "profile" ? <Profile />
-                    // : panel === "orderList" && isAdmin ? <OrderList />
-                    // : panel === "addService" && isAdmin ? <AddService />
+                    panel === "profile" ? <Profile />
+                    : panel === "orderList" && isAdmin ? <OrderList />
+                    : panel === "addService" && isAdmin ? <AddService />
                     // : panel === "makeAdmin" && isAdmin ? <MakeAdmin />
                     // : panel === "manageServices" && isAdmin ? <ManageService />
                     // : panel === "book" ? <Book />
@@ -62,7 +62,7 @@ const Dashboard = ({ adminLoading }) => {
                     // : panel === "review" && review.name && !reviewEdit ? <Review review={review} setEdit={setReviewEdit} />
                     // : panel === "review" && reviewEdit ? <EditReview review={review} edit={reviewEdit} setEdit={setReviewEdit} />
                     // : panel === "review" ? <AddReview setReview={setReview} />
-                    // : null
+                    : null
                 }
             </div>
         </main>

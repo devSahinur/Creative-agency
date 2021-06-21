@@ -11,9 +11,6 @@ const NavBar = () => {
 
   const toggleChecked = () => setNavToggle(value => !value);
   
-  const handleScroll =(e) => {
-    return toggleChecked()
-  }
 
     return (
         <header id="header" className="fixed-top d-flex align-items-center">

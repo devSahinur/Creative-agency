@@ -1,0 +1,65 @@
+.add-service .upload-btn {
+    border: 1px solid #10bad4;
+    color: #17a2b8;
+    max-width: 16rem;
+  }
+  
+  .add-service .upload-btn:hover,
+  .add-service .upload-btn:active {
+    border: 1px solid #17a2b8 !important;
+    color: white;
+    background: #17a2b8 !important;
+    border-radius: 0.25rem;
+  }
+  
+  .add-service .submit-btn {
+    width: 9rem;
+    padding: 0.68rem 0;
+  }
+  
+  .admin-group input,
+  .admin-group textarea,
+  .admin-group select {
+    width: 100%;
+    border: 1px solid #10bad4;
+    background: #efeff5;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .admin-group label {
+    color: gray;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .admin-group input:focus,
+  .admin-group textarea:focus {
+    border: 1px solid #10bad4;
+    outline: 0;
+  }
+  
+  input::-webkit-inner-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  
+  .admin-group textarea {
+    resize: none;
+    height: 230px;
+  }
+  
+  .main-button {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    background: #17a2b8;
+    color: #fff;
+    border: 0;
+  }
+  

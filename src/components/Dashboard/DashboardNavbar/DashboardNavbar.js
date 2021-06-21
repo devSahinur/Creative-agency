@@ -19,7 +19,7 @@ const DashboardNavbar = ({ setShowSidebar, show }) => {
                 </button>
                 <Navbar.Brand>
                     <h2
-                        className="d-inline-block ml-md-3 mb-0"
+                        className="d-inline-block ms-md-3 mb-0"
                         style={{ fontSize: "1.4rem", fontWeight: "600" }}>
                         {
                             panel === "profile" ? "Profile"
@@ -35,7 +35,7 @@ const DashboardNavbar = ({ setShowSidebar, show }) => {
                     </h2>
                 </Navbar.Brand>
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <div className="ml-auto" >
+                    <div className="ms-auto" >
                         <ProfilePopper />
                     </div>
                 </Navbar.Collapse>

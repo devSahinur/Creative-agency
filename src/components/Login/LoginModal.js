@@ -4,7 +4,7 @@ import { Modal } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
 import { useHistory, useLocation } from 'react-router-dom';
-// import { UserContext } from '../../App';
+import { UserContext } from '../../App';
 import {
     createUserWithEmailAndPassword,
     handleGoogleSignIn,
@@ -16,8 +16,7 @@ import {
 import './LoginModal.css';
 
 const LoginModal = () => {
-    // const { setLoggedInUser } = useContext(UserContext);
-    const [showModl, setLoggedInUser] = useState('');
+    const { setLoggedInUser } = useContext(UserContext);
     const [showModal, setShowModal] = useState(false);
     const [newUser, setNewUser] = useState(false);
     
