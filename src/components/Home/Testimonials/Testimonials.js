@@ -2,7 +2,6 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { CardDeck, Spinner } from 'react-bootstrap';
 import toast from 'react-hot-toast';
-import Fade from 'react-reveal/Fade';
 import SwiperCore, { Autoplay, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Testimonial from '../Testimonial/Testimonial';
@@ -59,7 +58,6 @@ const Testimonials = () => {
 
     return (
         <section id="reviews" className="testimonials p-md-3">
-            <Fade bottom duration={2500} distance="40px">
                 <div className="my-5 py-4">
                     <div className="review-title text-center">
                         <span>What Our Clients Says</span>
@@ -106,7 +104,6 @@ const Testimonials = () => {
                             </Swiper>
                         </CardDeck>}
                 </div>
-            </Fade>
         </section>
     );
 };
