@@ -9,7 +9,7 @@ import AddService from '../components/Dashboard/AddService/AddService';
 // import '../components/Dashboard/Dashboard.css';
 import DashboardNavbar from '../components/Dashboard/DashboardNavbar/DashboardNavbar';
 import MakeAdmin from '../components/Dashboard/MakeAdmin/MakeAdmin';
-// import ManageService from '../components/Dashboard/ManageService/ManageService';
+import ManageService from '../components/Dashboard/ManageService/ManageService';
 import OrderList from '../components/Dashboard/OrderList/OrderList';
 import Profile from '../components/Dashboard/Profile/Profile';
 // import AddReview from '../components/Dashboard/Review/AddReview';

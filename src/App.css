@@ -1474,11 +1474,12 @@
     font-size: 0.9em !important;
     display: block;
     border-radius: 5px;
-    ba: #6D6CF6 !important;
+    background-color: #6D6CF6 !important;
     margin-bottom: 5px;
   }
   #sidebar ul.CTAs a:hover{
-
+    color: black !important;
+    /* background: #6d7fcc !important; */
   }
   
 
