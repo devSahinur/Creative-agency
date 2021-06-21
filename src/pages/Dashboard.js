@@ -12,7 +12,7 @@ import MakeAdmin from '../components/Dashboard/MakeAdmin/MakeAdmin';
 import ManageService from '../components/Dashboard/ManageService/ManageService';
 import OrderList from '../components/Dashboard/OrderList/OrderList';
 import Profile from '../components/Dashboard/Profile/Profile';
-// import AddReview from '../components/Dashboard/Review/AddReview';
+import AddReview from '../components/Dashboard/AddReview/AddReview';
 // import Review, { EditReview } from '../components/Dashboard/Review/Review';
 // import ReviewLoader from '../components/Dashboard/Review/ReviewLoader';
 import Sidebar from '../components/Dashboard/Sidebar/Sidebar';
@@ -61,7 +61,7 @@ const Dashboard = ({ adminLoading }) => {
                     // : panel === "review" && loadingReview ? <ReviewLoader />
                     // : panel === "review" && review.name && !reviewEdit ? <Review review={review} setEdit={setReviewEdit} />
                     // : panel === "review" && reviewEdit ? <EditReview review={review} edit={reviewEdit} setEdit={setReviewEdit} />
-                    // : panel === "review" ? <AddReview setReview={setReview} />
+                    : panel === "review" ? <AddReview setReview={setReview} />
                     : null
                 }
             </div>
