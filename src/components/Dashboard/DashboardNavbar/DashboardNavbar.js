@@ -27,7 +27,7 @@ const DashboardNavbar = ({ setShowSidebar, show }) => {
                             : panel === "addService" ? "Add Service"
                             : panel === "makeAdmin" ? "Make Admin"
                             : panel === "manageServices" ? "Manage Services"
-                            : panel === "book" ? "Book"
+                            : panel === "booking" ? "Booking"
                             : panel === "bookingList" ? "Booking List"
                             : panel === "review" ? "Review"
                             : ""

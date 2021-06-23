@@ -4,7 +4,7 @@ import toast from 'react-hot-toast';
 import { useHistory, useParams } from 'react-router-dom';
 import { UserContext } from '../App';
 import AddService from '../components/Dashboard/AddService/AddService';
-import Book from '../components/Dashboard/Booking/Booking';
+import Booking from '../components/Dashboard/Booking/Booking';
 import BookingList from '../components/Dashboard/BookingList/BookingList'
 // import '../components/Dashboard/Dashboard.css';
 import DashboardNavbar from '../components/Dashboard/DashboardNavbar/DashboardNavbar';
@@ -56,7 +56,7 @@ const Dashboard = ({ adminLoading }) => {
                     : panel === "addService" && isAdmin ? <AddService />
                     : panel === "makeAdmin" && isAdmin ? <MakeAdmin />
                     : panel === "manageServices" && isAdmin ? <ManageService />
-                    : panel === "book" ? <Book />
+                    : panel === "booking" ? <Booking />
                     : panel === "bookingList" ? <BookingList />
                     // : panel === "review" && loadingReview ? <ReviewLoader />
                     // : panel === "review" && review.name && !reviewEdit ? <Review review={review} setEdit={setReviewEdit} />

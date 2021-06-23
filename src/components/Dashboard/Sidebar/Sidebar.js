@@ -62,8 +62,8 @@ const Sidebar = ({ show, adminLoading }) => {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/dashboard/book" className={panel === "book" ? "link-active" : ""}>
-                                    <FontAwesomeIcon icon={faShoppingCart} /> <span>Book</span>
+                                <Link to="/dashboard/booking" className={panel === "booking" ? "link-active" : ""}>
+                                    <FontAwesomeIcon icon={faShoppingCart} /> <span>Booking</span>
                                 </Link>
                             </li>
                             <li>
@@ -79,8 +79,8 @@ const Sidebar = ({ show, adminLoading }) => {
                         </>
                         : <>
                             <li>
-                                <Link to="/dashboard/book" className={panel === "book" ? "link-active" : ""}>
-                                    <FontAwesomeIcon icon={faShoppingCart} /> <span>Book</span>
+                                <Link to="/dashboard/booking" className={panel === "booking" ? "link-active" : ""}>
+                                    <FontAwesomeIcon icon={faShoppingCart} /> <span>Booking</span>
                                 </Link>
                             </li>
                             <li>

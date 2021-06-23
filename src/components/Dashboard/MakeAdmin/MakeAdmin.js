@@ -9,25 +9,11 @@ import { UserContext } from '../../../App';
 const AddAdmin = () => {
     const { loggedInUser: { email } } = useContext(UserContext);
     const { register, handleSubmit, reset } = useForm();
-
+    console.log(email)
     const onSubmit = data => {
-        if (email === "admin@test.gmail") {
-            return swal("Permission restriction!", "As a test-admin, you don't have this permission.", "info");
-        }
-        const loading = toast.loading('Adding...Please wait!');
-        axios.post('https://moto-repair.herokuapp.com/add-admin', data)
-            .then(res => {
-                reset()
-                toast.dismiss(loading);
-                if (res.data) {
-                    return swal("Successfully Added",  `You Successfully Added  ${data.email}  as an admin.`, "success");
-                }
-                swal("Failed!", "Something went wrong! Please try again.", "error", { dangerMode: true });
-            })
-            .catch(error => {
-                toast.dismiss(loading);
-                swal("Failed!", "Something went wrong! Please try again.", "error", { dangerMode: true })
-            });
+        console.log(data)
+
+     
  }
 
     return (
