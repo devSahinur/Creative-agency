@@ -1,3 +1,6 @@
+import React from 'react';
+import { Link, useParams } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faBook,
     faCog,
@@ -9,38 +12,25 @@ import {
     faUserCircle,
     faUserPlus
 } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useContext } from 'react';
-import { Link, useParams } from 'react-router-dom';
-import { UserContext } from '../../../App';
-import Logo from '../../../images/logo.png';
-import SidebarLoader from './SidebarLoader.js';
 
-const Sidebar = ({ show, adminLoading }) => {
-    const { isAdmin } = useContext(UserContext);
+import logo from '../../../images/logo.png'
+
+const Sidebar = ({ show, adminLoading}) => {
     const { panel } = useParams();
     return (
-        <nav id="sidebar" className={show ? "active" : ""}>
+        <nav id='sidebar' className={show ? 'active' : ''}>
             <div className="sidebar-header">
-                <Link to="/">
-                <img
-                    alt="Logo"
-                    src={Logo}
-                    width="150"
-                    height="42"
-                    className="d-inline-block align-top"
+                <img 
+                    src={logo} 
+                    alt="Cogency Logo"
                 />
-                </Link>
             </div>
-            {adminLoading ? <SidebarLoader /> :
-                <ul className="list-unstyled components">
+                <ul>
                     <li>
                         <Link to="/dashboard/profile" className={panel === "profile" ? "link-active" : ""}>
                             <FontAwesomeIcon icon={faUserCircle} style={{ fontSize: "1.3rem" }} /> <span>Profile</span>
                         </Link>
                     </li>
-                    {isAdmin ?
-                        <>
                             <li>
                                 <Link to="/dashboard/orderList" className={panel === "orderList" ? "link-active" : ""}>
                                     <FontAwesomeIcon icon={faListUl} /> <span>Order List</span>
@@ -62,8 +52,8 @@ const Sidebar = ({ show, adminLoading }) => {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/dashboard/booking" className={panel === "booking" ? "link-active" : ""}>
-                                    <FontAwesomeIcon icon={faShoppingCart} /> <span>Booking</span>
+                                <Link to="/dashboard/book" className={panel === "book" ? "link-active" : ""}>
+                                    <FontAwesomeIcon icon={faShoppingCart} /> <span>Book</span>
                                 </Link>
                             </li>
                             <li>
@@ -76,32 +66,15 @@ const Sidebar = ({ show, adminLoading }) => {
                                     <FontAwesomeIcon icon={faCommentDots} /> <span>Review</span>
                                 </Link>
                             </li>
-                        </>
-                        : <>
-                            <li>
-                                <Link to="/dashboard/booking" className={panel === "booking" ? "link-active" : ""}>
-                                    <FontAwesomeIcon icon={faShoppingCart} /> <span>Booking</span>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/dashboard/bookingList" className={panel === "bookingList" ? "link-active" : ""}>
-                                    <FontAwesomeIcon icon={faBook} /> <span>Booking List</span>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/dashboard/review" className={panel === "review" ? "link-active" : ""}>
-                                    <FontAwesomeIcon icon={faCommentDots} /> <span>Review</span>
-                                </Link>
-                            </li>
-                        </>}
-                </ul>}
-            <ul className="list-unstyled CTAs">
-                <li>
-                    <Link to="/" className="back-home btn-main text-white">
-                        <FontAwesomeIcon icon={faSignOutAlt} /> Back to Home
-                    </Link>
-                </li>
-            </ul>
+                </ul>
+
+                <ul className="list-unstyled CTAs">
+                    <li>
+                        <Link to="/" className="back-home btn-main text-white">
+                            <FontAwesomeIcon icon={faSignOutAlt} /> Back to Home
+                        </Link>
+                    </li>
+                </ul>
         </nav>
     );
 };

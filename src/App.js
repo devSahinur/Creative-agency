@@ -21,9 +21,11 @@ function App() {
   const [selectedService, setSelectedService] = useState([]);
   const [adminLoading, setAdminLoading] = useState(true);
   const [isAdmin, setIsAdmin] = useState(true);
-
+  
+  
   useEffect(() => {
-    axios.get(`http://localhost:5000/isAdmin?email=${loggedInUser?.email}`)
+    setIsAdmin(true);
+    axios.get(`https://gerez-server.herokuapp.com/isAdmin?email=${loggedInUser?.email}`)
       .then(res => {
         setIsAdmin(res.data);
         setAdminLoading(false);
