@@ -13,13 +13,13 @@ const AddService = ({ editService, restrictPermission, setEditService }) => {
 
     const onSubmit = async data => {
         console.log(data)
-        if (!data.image[0]) {
+        if (!editService && !data.image[0]) {
             return toast.error('Please upload an image!');
         }
         const loading = toast.loading('Uploading...Please wait!');
-        let imageURL = "";
+        let imageURL = editService ? editService.image : "";
 
-        if ( data.image[0]) {
+        if (!editService || (editService && data.image[0])) {
             const imageData = new FormData();
             imageData.set('key', '701a71fc100ddc2599c9438b268fee30');
             imageData.append('image', data.image[0]);
@@ -33,46 +33,48 @@ const AddService = ({ editService, restrictPermission, setEditService }) => {
         }
 
         const serviceInfo = {
-            title: data.title,
+            serviceTitle: data.serviceTitle,
             description: data.description,
             price: data.price,
             image: imageURL
         }
         console.log(serviceInfo)
 
-        // if (editService) {
-        //     if (restrictPermission(editService._id)) {
-        //         toast.dismiss(loading);
-        //         setEditService({});
-        //         return swal("Permission restriction!", "As a test-admin, you don't have permission to edit 6 core services. But you can edit your added services.", "info");
-        //     }
-        //     if (
-        //         data.title === editService.title &&
-        //         data.price === editService.price &&
-        //         imageURL === editService.image &&
-        //         data.description === editService.description
-        //     ) {
-        //         toast.dismiss(loading);
-        //         setEditService({});
-        //         return toast.error("You haven't changed anything!");
-        //     }
-        //     axios.patch(`https://gerez-server.herokuapp.com/update/${editService._id}`, serviceInfo)
-        //         .then(res => {
-        //             toast.dismiss(loading);
-        //             if (res.data) {
-        //                 setEditService(serviceInfo);
-        //                 return swal("Successfully updated", "Your service has been successfully updated!", "success");
-        //             }
-        //             setEditService({});
-        //             swal("Failed!", "Something went wrong! Please try again.", "error", { dangerMode: true });
-        //         })
-        //         .catch(error => {
-        //             toast.dismiss(loading);
-        //             setEditService({});
-        //             swal("Failed!", "Something went wrong! Please try again.", "error", { dangerMode: true });
-        //         });
-        //     return;
-        // }
+        if (editService) {
+            if (restrictPermission(editService._id)) {
+                toast.dismiss(loading);
+                setEditService({});
+                return swal("Permission restriction!", "As a test-admin, you don't have permission to edit 6 core services. But you can edit your added services.", "info");
+            }
+            if (
+                data.serviceTitle === editService.serviceTitle &&
+                data.price === editService.price &&
+                imageURL === editService.image &&
+                data.description === editService.description
+            ) {
+                toast.dismiss(loading);
+                setEditService({});
+                return toast.error("You haven't changed anything!");
+            }
+            const editUpdate = {...serviceInfo, _id:editService._id}
+            
+            axios.patch(`http://localhost:5000/api/service/${editService._id}`, editUpdate)
+                .then(res => {
+                    toast.dismiss(loading);
+                    if (res.data) {
+                        setEditService(editUpdate);
+                        return swal("Successfully updated", "Your service has been successfully updated!", "success");
+                    }
+                    setEditService({});
+                    swal("Failed!", "Something went wrong! Please try again.", "error", { dangerMode: true });
+                })
+                .catch(error => {
+                    toast.dismiss(loading);
+                    setEditService({});
+                    swal("Failed!", "Something went wrong! Please try again.", "error", { dangerMode: true });
+                });
+            return;
+        }
 
         axios.post('http://localhost:5000/api/service', serviceInfo)
             .then(res => {
@@ -97,7 +99,8 @@ const AddService = ({ editService, restrictPermission, setEditService }) => {
                             <Form.Label style={{ fontWeight: "bold" }}>Service Title</Form.Label>
                             <Form.Control
                                 type="text"
-                                {...register("title", { required: true })}
+                                defaultValue={editService ? editService.serviceTitle : ""}
+                                {...register("serviceTitle", { required: true })}
                                 placeholder="Enter Title" />
                         </Form.Group>
                         <Form.Group as={Col} md={5} sm={12}>
@@ -105,6 +108,7 @@ const AddService = ({ editService, restrictPermission, setEditService }) => {
                             <Form.Control
                                 style={{ maxWidth: "260px" }}
                                 type="text"
+                                defaultValue={editService ? editService.price : ""}
                                 {...register("price", { required: true })}
                                 placeholder="Enter Price" />
                         </Form.Group>
@@ -114,6 +118,7 @@ const AddService = ({ editService, restrictPermission, setEditService }) => {
                                 style={{ height: "10rem" }}
                                 type="text"
                                 as="textarea"
+                                defaultValue={editService ? editService.description : ""}
                                 {...register("description", { required: true })}
                                 placeholder="Enter Description" />
                         </Form.Group>
