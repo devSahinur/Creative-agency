@@ -5,6 +5,7 @@ import { useHistory, useParams } from 'react-router-dom';
 
 
 import { UserContext } from '../App';
+import AddReview from '../components/Dashborad/AddReview/AddReview';
 import AddService from '../components/Dashborad/AddService/AddService';
 import DashboardNavbar from '../components/Dashborad/DashboardNavbar/DashboardNavbar';
 import ManageService from '../components/Dashborad/ManageService/ManageService';
@@ -47,6 +48,7 @@ const Dashboard = ({ adminLoading }) => {
                     panel === 'profile' ? <Profile/>
                     : panel === 'addService' ? <AddService/>
                     : panel === 'manageServices' ? <ManageService/>
+                    : panel === 'review' ? <AddReview/>
                     : null
                 }
             </div>

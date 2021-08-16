@@ -9,7 +9,7 @@ import './Testimonials.css';
 import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css"
 
-const Reviews =[
+const Revisews =[
     {
         name: 'Sahinur islam',
         address: 'California',
@@ -50,12 +50,12 @@ const Reviews =[
 const Testimonials = () => {
     SwiperCore.use([Pagination, Autoplay]);
     const [loading, setLoading] = useState(true);
-    // const [Reviews, setReviews] = useState([]);
+    const [Reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        axios.get('https://gerez-server.herokuapp.com/reviews')
+        axios.get('http://localhost:5000/user/review')
             .then(res => {
-                // setReviews(res.data);
+                setReviews(res.data);
                 setLoading(false);
             })
             .catch(error => toast.error(error.message))
