@@ -1,6 +1,3 @@
-import React from 'react';
-import { Link, useParams } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faBook,
     faCog,
@@ -12,25 +9,33 @@ import {
     faUserCircle,
     faUserPlus
 } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { useContext } from 'react';
+import { Link, useParams } from 'react-router-dom';
+import { UserContext } from '../../../App';
+import Logo from '../../../images/logo.png';
+import SidebarLoader from './SidebarLoader.js';
 
-import logo from '../../../images/logo.png'
-
-const Sidebar = ({ show, adminLoading}) => {
+const Sidebar = ({ show, adminLoading }) => {
+    const { isAdmin } = useContext(UserContext);
     const { panel } = useParams();
     return (
-        <nav id='sidebar' className={show ? 'active' : ''}>
+        <nav id="sidebar" className={show ? "active" : ""}>
             <div className="sidebar-header">
                 <img 
-                    src={logo} 
+                    src={Logo} 
                     alt="Cogency Logo"
                 />
             </div>
-                <ul>
+            {adminLoading ? <SidebarLoader /> :
+                <ul className="list-unstyled components">
                     <li>
                         <Link to="/dashboard/profile" className={panel === "profile" ? "link-active" : ""}>
                             <FontAwesomeIcon icon={faUserCircle} style={{ fontSize: "1.3rem" }} /> <span>Profile</span>
                         </Link>
                     </li>
+                    {isAdmin ?
+                        <>
                             <li>
                                 <Link to="/dashboard/orderList" className={panel === "orderList" ? "link-active" : ""}>
                                     <FontAwesomeIcon icon={faListUl} /> <span>Order List</span>
@@ -51,6 +56,8 @@ const Sidebar = ({ show, adminLoading}) => {
                                     <FontAwesomeIcon icon={faCog} /> <span>Manage Services</span>
                                 </Link>
                             </li>
+                        </>
+                        : <>
                             <li>
                                 <Link to="/dashboard/book" className={panel === "book" ? "link-active" : ""}>
                                     <FontAwesomeIcon icon={faShoppingCart} /> <span>Book</span>
@@ -66,15 +73,15 @@ const Sidebar = ({ show, adminLoading}) => {
                                     <FontAwesomeIcon icon={faCommentDots} /> <span>Review</span>
                                 </Link>
                             </li>
-                </ul>
-
-                <ul className="list-unstyled CTAs">
-                    <li>
-                        <Link to="/" className="back-home btn-main text-white">
-                            <FontAwesomeIcon icon={faSignOutAlt} /> Back to Home
-                        </Link>
-                    </li>
-                </ul>
+                        </>}
+                </ul>}
+            <ul className="list-unstyled CTAs">
+                <li>
+                    <Link to="/" className="back-home btn-main text-white">
+                        <FontAwesomeIcon icon={faSignOutAlt} /> Back to Home
+                    </Link>
+                </li>
+            </ul>
         </nav>
     );
 };
